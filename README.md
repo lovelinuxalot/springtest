@@ -1,20 +1,26 @@
-=========
+Java Spring MVC Example
+=======================
 
-## Spring Security Login Example Project
+This is a small example Java Spring MVC application, which is primarily used
+for experimenting with some Spring features and discussing about it with friends.
 
-###The Course
-The "Learn Spring Security" Classes: http://github.learnspringsecurity.com
+You can easily run the project by invoking Maven with the goal "tomcat:run".
 
-### Relevant Articles: 
-- [Spring Security Form Login](http://www.baeldung.com/spring-security-login)
-- [Spring Security Logout](http://www.baeldung.com/spring-security-logout)
-- [Spring Security Expressions – hasRole Example](http://www.baeldung.com/spring-security-expressions-basic)
-- [Spring HTTP/HTTPS Channel Security](http://www.baeldung.com/spring-channel-security-https)
-- [Spring Security - Customize the 403 Forbidden/Access Denied Page](http://www.baeldung.com/spring-security-custom-access-denied-page)
-- [Spring Security – Redirect to the Previous URL After Login](http://www.baeldung.com/spring-security-redirect-login)
-- [Spring Security Custom AuthenticationFailureHandler](http://www.baeldung.com/spring-security-custom-authentication-failure-handler)
+Overview
+--------
 
-### Build the Project
-```
-mvn clean install
-```
+Currently the following features are implemented:
+ * user registration and login via Spring Security and a very simple custom authentication provider
+ * test cases for controllers, models and integration tests
+ * usage of MongoDB via Spring Data (must be activated)
+ * Hibernate and transaction management (must be activated)
+ 
+ In progress:
+  * simple CRUD operations in form of a blog-like message service
+ 
+Future
+-------
+ * Selenium acceptance tests
+ * Spring Web Flow example
+ * REST with Spring and Jersey
+ * maybe a more modern template engine
