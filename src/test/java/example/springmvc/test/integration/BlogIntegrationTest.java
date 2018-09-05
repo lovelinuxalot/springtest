@@ -30,7 +30,7 @@ import example.springmvc.model.users.User;
 import example.springmvc.model.users.UserStorage;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration("src/main/webapp")
+
 /* @ContextConfiguration(locations = {
 		"classpath:WEB-INF/application-context.xml",
 		"classpath:WEB-INF/spring-security.xml",
@@ -40,7 +40,8 @@ file:src/main/webapp/WEB-INF */
 		"file:src/main/webapp/WEB-INF/application-context.xml",
 		"file:src/main/webapp/WEB-INF/spring-security.xml",
 		"file:src/main/webapp/WEB-INF/spring-web.xml" })
-		
+@WebAppConfiguration("src/main/webapp")
+
 public class BlogIntegrationTest {
 
 	@Autowired
