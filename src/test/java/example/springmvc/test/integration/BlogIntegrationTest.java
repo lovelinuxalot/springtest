@@ -31,10 +31,16 @@ import example.springmvc.model.users.UserStorage;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration("src/main/webapp")
-<!--@ContextConfiguration(locations = {
+/* @ContextConfiguration(locations = {
 		"classpath:WEB-INF/application-context.xml",
 		"classpath:WEB-INF/spring-security.xml",
-		"classpath:WEB-INF/spring-web.xml" })-->
+		"classpath:WEB-INF/spring-web.xml" }) 
+file:src/main/webapp/WEB-INF */
+@ContextConfiguration(locations = { 
+		"file:src/main/webapp/WEB-INF/application-context.xml",
+		"file:src/main/webapp/WEB-INF/spring-security.xml",
+		"file:src/main/webapp/WEB-INF/spring-web.xml" })
+		
 public class BlogIntegrationTest {
 
 	@Autowired
